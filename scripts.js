@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
     blackSquare.addEventListener("click", function () {
       let randomColor = Math.floor(Math.random() * 3);
       blackSquare.style.backgroundColor = colors[randomColor];
-    });
-  });
+    })
+
+    blackSquare.addEventListener("dblclick", function(){
+        if (squareNum % 2 == 0){
+            blackSquare.nextSibling.remove();
+        } else {
+            blackSquare.previousSibling.remove();
+        }
+    })
+  })
 });
