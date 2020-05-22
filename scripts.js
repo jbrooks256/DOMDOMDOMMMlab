@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   let colors = ["red", "green", "blue"];
+  let squareNum = 1
 
   button.addEventListener("click", function () {
     let blackSquare = document.createElement("div");
+    blackSquare.innerText = squareNum++;
     blackSquare.className = "square";
-    blackSquare.id = "squareNum";
     document.body.appendChild(blackSquare);
         
     blackSquare.addEventListener("click", function () {

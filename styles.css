@@ -1,5 +1,8 @@
 .square {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 50px;
     width: 50px;
     background-color: black;
